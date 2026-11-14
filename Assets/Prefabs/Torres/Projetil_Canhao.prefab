@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6969261442832769031}
   - component: {fileID: 5387145607360182075}
   m_Layer: 0
-  m_Name: Projetil_Teste
+  m_Name: Projetil_Canhao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 571cfd6ce73e1ee76b2ed420dc2adcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
-  speed: 20
-  damage: 2
+  speed: 30
+  damage: 6
   pierce: 1
-  lifetime: 1
+  lifetime: 1.5

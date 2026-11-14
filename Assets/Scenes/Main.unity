@@ -984,7 +984,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 998476225
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7285104100621103090, guid: b51cb14db9b45c54f9b78abedfadeb4d, type: 3}
@@ -4016,6 +4016,22 @@ PrefabInstance:
     - target: {fileID: 5598135380290059909, guid: a46ae7eb75dc3fc49abde523c88cfd01, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339266399850695055, guid: a46ae7eb75dc3fc49abde523c88cfd01, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339266399850695055, guid: a46ae7eb75dc3fc49abde523c88cfd01, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -109429811
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080087045153146748, guid: a46ae7eb75dc3fc49abde523c88cfd01, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080087045153146748, guid: a46ae7eb75dc3fc49abde523c88cfd01, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7704784378534933616, guid: a46ae7eb75dc3fc49abde523c88cfd01, type: 3}
       propertyPath: m_Name

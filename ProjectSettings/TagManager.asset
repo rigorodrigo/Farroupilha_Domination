@@ -41,6 +41,9 @@ TagManager:
   - name: fundo
     uniqueID: 998476225
     locked: 0
+  - name: slot
+    uniqueID: 4185537485
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
