@@ -11,27 +11,44 @@ public class Tower : MonoBehaviour
 
     public AudioClip pupupuSound;
     private AudioSource towerAudio;
+    private TowerVisual visual;
 
     private float cooldown;
 
     void Start()
     {
         towerAudio = GetComponent<AudioSource>();
+        visual = GetComponentInChildren<TowerVisual>();
+
+        if (visual == null)
+        {
+            Debug.LogError($"{name} não tem TowerVisual em nenhum filho.", this);
+            enabled = false;
+        }
     }
 
     private void Update()
     {
         cooldown -= Time.deltaTime;
         if (cooldown > 0f) return;
+        if (visual.Ocupado) return;
 
         Enemy target = FindClosestEnemy();
+        if (target == null) return;
+
+        cooldown = fireInterval;
+        visual.Atacar(target.transform.position, () => Disparar(target));
+    }
+
+    private void Disparar(Enemy target)
+    {
         if (target == null) return;
 
         // Mira onde o inimigo está agore, se ele for rápido o tiro pode passar atrás dele
         Projectile projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
         projectile.Launch(target.transform.position);
-        cooldown = fireInterval;
-        towerAudio.PlayOneShot(pupupuSound, 1.0f);
+
+        if (towerAudio != null && pupupuSound != null) towerAudio.PlayOneShot(pupupuSound, 1.0f);
     }
 
     private Enemy FindClosestEnemy()

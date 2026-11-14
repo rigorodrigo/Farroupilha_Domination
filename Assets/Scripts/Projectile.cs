@@ -7,7 +7,8 @@ public class Projectile : MonoBehaviour
     [SerializeField] private float speed = 20f;
     [SerializeField] private float damage = 2f;
     [SerializeField] private int pierce = 1;      
-    [SerializeField] private float lifetime = 1f; 
+    [SerializeField] private float lifetime = 1f;
+    [SerializeField] private float giro = 0f;    
 
     private Rigidbody2D body;
     private Vector2 direction;
@@ -32,6 +33,7 @@ public class Projectile : MonoBehaviour
     private void FixedUpdate()
     {
         body.MovePosition(body.position + direction * speed * Time.fixedDeltaTime);
+        if (giro != 0f) body.MoveRotation(body.rotation + giro * Time.fixedDeltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
