@@ -42,6 +42,11 @@ public class LojaDeTorres : MonoBehaviour
         return Instantiate(opcao.prefab, posicao, Quaternion.identity);
     }
 
+    public bool PodeComprarSelecionada()
+    {
+        return jogador.pila >= opcoes[selecionada].custo;
+    }
+
     public void Selecionar (int indice)
     {
         selecionada = indice;

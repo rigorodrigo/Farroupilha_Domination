@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8804462221670827995}
   - component: {fileID: -8843240770463776552}
   m_Layer: 0
-  m_Name: Torre_Atirador
+  m_Name: Torre_Canhoneiro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
