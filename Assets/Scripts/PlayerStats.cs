@@ -5,9 +5,8 @@ public class PlayerStats : MonoBehaviour
 {
 
     public int pila;
-    [SerializeField] private int pilaInicial = 50;  // o player iniciará com um valor X de pila, a definir 
+    [SerializeField] private int pilaInicial = 50;  // o player começa com um valor
 
-    // quando o evento Enemy.Died é ouvido, o método EnemyDied é avisado
     private void OnEnable() {Enemy.Died += EnemyDied; }
     private void OnDisable() {Enemy.Died -= EnemyDied; }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -29,16 +28,15 @@ public class PlayerStats : MonoBehaviour
 
     public bool GastarPila (int valor)
     {
-        if (pila < valor) return false;  // afirma que não havia fundos para a compra
+        if (pila < valor) return false;  // Tá pobre fi
 
         pila -= valor;
         
         Debug.Log($"Compra realizada com sucesso! Compra de {valor} pila, total restante: {pila} pila");
 
-        return true;  // confirmando que a compra foi realizada sem problemas
+        return true;
     }
 
-    // método que é chamado quando um inimigo é morto
 
     void EnemyDied(Enemy enemy)
     {

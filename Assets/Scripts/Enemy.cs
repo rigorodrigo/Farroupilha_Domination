@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 
 // Código base de um inimigo base
+[RequireComponent(typeof(Rigidbody2D))] // Unity adiciona rigidbody sozinha daí quando criar um inimigo, magia isso
 public class Enemy : MonoBehaviour
 {
     // Eventos do inimiog

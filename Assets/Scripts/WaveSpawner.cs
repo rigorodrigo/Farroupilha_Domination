@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
@@ -21,6 +22,25 @@ public class WaveSpawner : MonoBehaviour
 
     [SerializeField] private List<Wave> ondas;
     [SerializeField] private int inimigosVivos;
+    [SerializeField] private bool esperarJogador = true; 
+
+    public event Action FaseConcluida; // Avisa o GameManager que todas as ondas acabaram
+    public event Action<int> OndaComecou; // Avisa o HUD o número da onda que começou
+
+    // Só leitura pro HUD mostrar em qual onda estamos
+    public int OndaAtual { get; private set; }
+    public int TotalOndas => ondas.Count;
+    public bool EsperandoJogador { get; private set; } 
+    public bool RepetirOndas { get; set; }
+
+    private bool liberarOnda;
+
+    // Chamado pelo botão "Próxima onda" do HUD
+    public void ChamarProximaOnda()
+    {
+        liberarOnda = true;
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -53,7 +73,7 @@ public class WaveSpawner : MonoBehaviour
     private void SpawnarInimigo (EnemyGroup grupo)
     {
         Vector3 posicao = grupo.caminho.waypoints[0].position;
-        Enemy novoInimigo = Instantiate(grupo.prefab,posicao, Quaternion.identity); // instancionado o prefab em rotação neutra e na primeira posição
+        Enemy novoInimigo = Instantiate(grupo.prefab,posicao, Quaternion.identity); 
         novoInimigo.path = grupo.caminho;
         inimigosVivos++;
     }
@@ -71,21 +91,36 @@ public class WaveSpawner : MonoBehaviour
     {
         yield return new WaitForSeconds(onda.pausa);
 
-        foreach (EnemyGroup grupo in onda.grupos) // para cada grupo na onda...
-        {
-            yield return StartCoroutine(SpawnarGrupo(grupo)); // spawanndo um grupo por vez
+        foreach (EnemyGroup grupo in onda.grupos) 
+ 	{
+            yield return StartCoroutine(SpawnarGrupo(grupo));
         }
-        yield return new WaitUntil(() => inimigosVivos == 0);  // testando a verificação se não há mais inimigos vivos
+        yield return new WaitUntil(() => inimigosVivos == 0); 
     }
 
     private IEnumerator ExecutarFase ()
     {
-        for (int i = 0; i< ondas.Count; i++)
+        do
         {
-            yield return StartCoroutine(SpawnarOnda(ondas[i]));
-            Debug.Log($"Onda número {i}");
-        }
+            for (int i = 0; i< ondas.Count; i++)
+            {
+                // Espera o jogador clicar no botão antes de mandar a onda
+                if (esperarJogador)
+                {
+                    liberarOnda = false;
+                    EsperandoJogador = true;
+                    yield return new WaitUntil(() => liberarOnda);
+                    EsperandoJogador = false;
+                }
+
+                OndaAtual++;
+                OndaComecou?.Invoke(OndaAtual);
+                yield return StartCoroutine(SpawnarOnda(ondas[i]));
+                Debug.Log($"Onda número {i}");
+            }
+        } while (RepetirOndas);
 
         Debug.Log("Fase Acabou.");
+        FaseConcluida?.Invoke();
     }
 }

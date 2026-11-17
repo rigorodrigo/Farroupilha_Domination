@@ -1,8 +1,6 @@
 using System;
 using UnityEngine;
 
-// Base defendida pelo jogador. Perde vida quando um inimigo a alcança
-// Precisa de um Collider2D trigger cobrindo o fim dos caminhos
 public class PlayerBase : MonoBehaviour
 {
     public event Action<int> HealthChanged; // Eventos são show de bola
@@ -11,6 +9,10 @@ public class PlayerBase : MonoBehaviour
     [SerializeField] private int maxHealth = 20;
 
     private int health;
+
+    // Só leitura, pro HUD mostrar a vida
+    public int Health => health;
+    public int MaxHealth => maxHealth;
 
     private void Awake()
     {
