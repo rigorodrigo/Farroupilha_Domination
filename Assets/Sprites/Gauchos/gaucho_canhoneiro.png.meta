@@ -1,12 +1,15 @@
 fileFormatVersion: 2
 guid: c358d0745f07e968da048a93f7ede0a4
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5290828883189835064
+    second: gaucho_canhoneiro_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,24 +40,24 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -69,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -95,12 +98,122 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: canhoneiro_recarregando
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 700
+        width: 498
+        height: 464
+      alignment: 9
+      pivot: {x: 0.49196786, y: 0.023706896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cad71aa9233396b0800000000000000
+      internalID: -5290828883189835064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canhoneiro_parado
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 662
+        width: 575
+        height: 511
+      alignment: 9
+      pivot: {x: 0.53913045, y: 0.09589041}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34dfbeaf14da7ad4b921056afe53ea1e
+      internalID: -1968798178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canhoneiro_mirando
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 674
+        width: 551
+        height: 435
+      alignment: 9
+      pivot: {x: 0.5045372, y: 0.085057475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf7d97dfb2b02a46bfe3e8a51f88ee4
+      internalID: -2087618922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canhoneiro_disparando
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 694
+        width: 679
+        height: 447
+      alignment: 9
+      pivot: {x: 0.46391752, y: 0.03803132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0c14da6bb34a140bfb0beffb2f83ad
+      internalID: 1480498658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bala_canh\xE3o"
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 295
+        width: 192
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cebc92142a8cf145bcfb30984c9c0cc
+      internalID: -1735023259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 211324780760e054c804a217ad7906f4
     internalID: 0
     vertices: []
     indices: 
@@ -109,7 +222,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "bala_canh\xE3o": -1735023259
+      canhoneiro_disparando: 1480498658
+      canhoneiro_mirando: -2087618922
+      canhoneiro_parado: -1968798178
+      canhoneiro_recarregando: -5290828883189835064
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
