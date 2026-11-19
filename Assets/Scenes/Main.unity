@@ -2232,12 +2232,25 @@ MonoBehaviour:
       quantidade: 5
       intervalo: 2
       caminho: {fileID: 1281312676}
+    ondaDificil: 0
   - pausa: 3
     grupos:
     - prefab: {fileID: 6641257764725068180, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
       quantidade: 3
       intervalo: 1
       caminho: {fileID: 1281312676}
+    ondaDificil: 0
+  - pausa: 3
+    grupos:
+    - prefab: {fileID: 6641257764725068180, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      quantidade: 3
+      intervalo: 1
+      caminho: {fileID: 1281312676}
+    - prefab: {fileID: 1423483684467970418, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      quantidade: 3
+      intervalo: 1
+      caminho: {fileID: 28771672}
+    ondaDificil: 1
   inimigosVivos: 0
   esperarJogador: 1
 --- !u!1 &530224731

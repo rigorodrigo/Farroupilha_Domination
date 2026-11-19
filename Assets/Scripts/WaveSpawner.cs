@@ -2,6 +2,8 @@ using System;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using System.Linq;
+
 [System.Serializable]
 public class EnemyGroup {
     public Enemy prefab;
@@ -15,6 +17,7 @@ public class Wave
 {
     public float pausa;
     public List<EnemyGroup> grupos;
+    public bool ondaDificil;
 }
 
 public class WaveSpawner : MonoBehaviour
@@ -29,7 +32,7 @@ public class WaveSpawner : MonoBehaviour
 
     // Só leitura pro HUD mostrar em qual onda estamos
     public int OndaAtual { get; private set; }
-    public int TotalOndas => ondas.Count;
+    public int TotalOndas {get; private set;}
     public bool EsperandoJogador { get; private set; } 
     public bool RepetirOndas { get; set; }
 
@@ -100,10 +103,17 @@ public class WaveSpawner : MonoBehaviour
 
     private IEnumerator ExecutarFase ()
     {
+        if (MenuPrincipal.dificuldade == 1) TotalOndas = ondas.Count;  // se a fase for dificil, pega todas as ondas
+        else // se for fácil, pega apenas aquelas que estão marcadas para serem nesta fase
+        {
+            TotalOndas = ondas.Count(o => o.ondaDificil == false);   
+        }
         do
         {
+
             for (int i = 0; i< ondas.Count; i++)
             {
+                if (ondas[i].ondaDificil && MenuPrincipal.dificuldade == 0) continue;  // se a onda é apenas para fase difícil, e a dificuldade está setada como fácil, pula a onda
                 // Espera o jogador clicar no botão antes de mandar a onda
                 if (esperarJogador)
                 {
