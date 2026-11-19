@@ -2426,6 +2426,7 @@ MonoBehaviour:
     ondaDificil: 1
   inimigosVivos: 0
   esperarJogador: 1
+  multiplicadorVidaDificil: 2
 --- !u!1 &530224731
 GameObject:
   m_ObjectHideFlags: 0

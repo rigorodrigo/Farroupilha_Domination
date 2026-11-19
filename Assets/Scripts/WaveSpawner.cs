@@ -27,6 +27,8 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField] private int inimigosVivos;
     [SerializeField] private bool esperarJogador = true; 
 
+    [SerializeField] private float multiplicadorVidaDificil = 1.5f;
+
     public event Action FaseConcluida; // Avisa o GameManager que todas as ondas acabaram
     public event Action<int> OndaComecou; // Avisa o HUD o número da onda que começou
 
@@ -78,6 +80,7 @@ public class WaveSpawner : MonoBehaviour
         Vector3 posicao = grupo.caminho.waypoints[0].position;
         Enemy novoInimigo = Instantiate(grupo.prefab,posicao, Quaternion.identity); 
         novoInimigo.path = grupo.caminho;
+        if (MenuPrincipal.dificuldade == 1) novoInimigo.MultiplicarVida(multiplicadorVidaDificil);
         inimigosVivos++;
     }
 

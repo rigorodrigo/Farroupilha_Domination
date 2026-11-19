@@ -52,6 +52,12 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public void MultiplicarVida (float multiplicador)
+    {
+        maxHealth *= multiplicador;
+        health = maxHealth;
+    }
+
     // Encosta em algo (base)
     private void OnTriggerEnter2D(Collider2D other)
     {
