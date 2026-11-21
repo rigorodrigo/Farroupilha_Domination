@@ -1,12 +1,15 @@
 fileFormatVersion: 2
 guid: ae811ae3f52a96048ba1081da626f227
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3787871271033037609
+    second: imperial_cavaleiro_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,24 +40,24 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 800
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -69,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -95,12 +98,122 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: imperial_cavaleiro_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1265
+        width: 54
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21f3fd53918b3292bd206bfc805dea4
+      internalID: 187001898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: imperial_cavaleiro_walk_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 706
+        width: 336
+        height: 472
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8f1537307b70e3e89ff8465f1b3cb8
+      internalID: -1615812057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: imperial_cavaleiro_walk_2
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 707
+        width: 358
+        height: 464
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48f2b8ccdbcb3a14b273151c40a56e5
+      internalID: 1565836136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: imperial_cavaleiro_attack_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 417
+        height: 554
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a40c65b1d16cd5d4bd375a716f94708
+      internalID: -49137154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: imperial_cavaleiro_attack_2
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 38
+        width: 332
+        height: 504
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2d8e55c53ec036498c570ace4ced48
+      internalID: 1518278577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d1ee039d25b6c9e3eb0aefd31ca6dfcf
     internalID: 0
     vertices: []
     indices: 
@@ -108,8 +221,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      imperial_cavaleiro_0: 3787871271033037609
+      imperial_cavaleiro_11: 1968014170
+      imperial_cavaleiro_12: -1402572381
+      imperial_cavaleiro_13: -354084589
+      imperial_cavaleiro_14: 724714456
+      imperial_cavaleiro_15: 56009796
+      imperial_cavaleiro_16: 478575813
+      imperial_cavaleiro_19: 1812517598
+      imperial_cavaleiro_2: 187001898
+      imperial_cavaleiro_20: -2064388172
+      imperial_cavaleiro_21: -1615128798
+      imperial_cavaleiro_22: 923237940
+      imperial_cavaleiro_3: 1117587991
+      imperial_cavaleiro_4: 1231155097
+      imperial_cavaleiro_5: 1677712117
+      imperial_cavaleiro_6: -1503104762
+      imperial_cavaleiro_7: -1557625547
+      imperial_cavaleiro_9: 919624420
+      imperial_cavaleiro_attack_1: -49137154
+      imperial_cavaleiro_attack_2: 1518278577
+      imperial_cavaleiro_walk_1: -1615812057
+      imperial_cavaleiro_walk_2: 1565836136
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

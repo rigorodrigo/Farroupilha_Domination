@@ -1,12 +1,15 @@
 fileFormatVersion: 2
 guid: d824f74470b6909448beb889dc6feb19
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 623508919091289024
+    second: imperial_guarda_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,24 +40,24 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 800
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -69,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -95,12 +98,78 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: imperial_guarda_attack
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 724
+        width: 523
+        height: 388
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9651a71cbb4b50da09bc0281a7018342
+      internalID: 2067230516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: imperial_guarda_walk_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 734
+        width: 298
+        height: 448
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288d3e304d097bf8399250bebf9860da
+      internalID: -856350374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: imperial_guarda_walk_2
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 724
+        width: 303
+        height: 458
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4cd69b89302ffbf18ff2c632fd92b2e
+      internalID: 2126647599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 530f0e3c6f4c9c1828a3d82655f00e2d
     internalID: 0
     vertices: []
     indices: 
@@ -108,8 +177,34 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      imperial_guarda_0: 623508919091289024
+      imperial_guarda_11: 1389321634
+      imperial_guarda_12: -1018429821
+      imperial_guarda_13: -36625547
+      imperial_guarda_14: 1153476211
+      imperial_guarda_15: 1535461083
+      imperial_guarda_16: -1442537331
+      imperial_guarda_17: 1138762968
+      imperial_guarda_18: -2139988269
+      imperial_guarda_19: 1200207064
+      imperial_guarda_2: -1233172275
+      imperial_guarda_20: -1954634820
+      imperial_guarda_21: -2006556776
+      imperial_guarda_22: 1282879601
+      imperial_guarda_23: 185740084
+      imperial_guarda_3: -362355766
+      imperial_guarda_4: 2009434486
+      imperial_guarda_5: 161632835
+      imperial_guarda_6: -1763587994
+      imperial_guarda_7: -920710526
+      imperial_guarda_9: 711903343
+      imperial_guarda_attack: 2067230516
+      imperial_guarda_walk_1: -856350374
+      imperial_guarda_walk_2: 2126647599
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
