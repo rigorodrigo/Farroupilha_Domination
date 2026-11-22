@@ -19,7 +19,8 @@ public class HUD : MonoBehaviour
     [SerializeField] private Image barraVida;
     [SerializeField] private TMP_Text textoOnda;
     [SerializeField] private TMP_Text textoTempo;
-    [SerializeField] private TMP_Text legendaTempo; 
+    [SerializeField] private TMP_Text legendaTempo;
+    [SerializeField] private TMP_Text textoPontuacao;
 
     [Header("Lista de torres")]
     [SerializeField] private CartaoTorre prefabCartao;
@@ -77,6 +78,7 @@ public class HUD : MonoBehaviour
     private void Update()
     {
         textoPila.text = $"{jogador.pila}";
+        textoPontuacao.text = $"{gerenciador.PontuacaoCampanha}";
         
 	if (gerenciador.Sobrevivencia) textoOnda.text = $"{geradorDeOndas.OndaAtual}";
         else textoOnda.text = $"{geradorDeOndas.OndaAtual}/{geradorDeOndas.TotalOndas}";

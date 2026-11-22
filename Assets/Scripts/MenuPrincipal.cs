@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
@@ -27,6 +28,7 @@ public class MenuPrincipal : MonoBehaviour
 
     public void Jogar()
     {
+        GameManager.NovaCampanha(); // campanha nova começa do zero
         SceneManager.LoadScene(cenaDoJogo);
     }
 
@@ -71,7 +73,24 @@ public class MenuPrincipal : MonoBehaviour
         textoDificuldade.text = $"Dificuldade: {nomesDificuldade[dificuldade]}";
     }
 
-    // Lê as 5 melhores pontuações salvas nas PlayerPrefs (Provavlemte tá bugado).
+   
+    public static void RegistrarPontuacao(int novaPontuacao)
+    {
+        List<int> lista = new List<int>();
+        for (int i = 0; i < 5; i++)
+            lista.Add(PlayerPrefs.GetInt($"Ranking{i}", 0));
+
+        lista.Add(novaPontuacao);
+        lista.Sort();    // menor pro maior
+        lista.Reverse(); // maior primeiro
+
+        for (int i = 0; i < 5; i++) // salva só os 5 primeiros
+            PlayerPrefs.SetInt($"Ranking{i}", lista[i]);
+
+        PlayerPrefs.Save();
+    }
+
+    // Lê as 5 melhores pontuações salvas nas PlayerPrefs.
     private string MontarRanking()
     {
         string texto = "";

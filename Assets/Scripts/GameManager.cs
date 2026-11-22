@@ -22,13 +22,27 @@ public class GameManager : MonoBehaviour
     public float Velocidade => velocidades[indiceVelocidade];
     public bool Sobrevivencia => sobrevivencia;
 
+    // static: sobrevive à troca de cena, então soma a campanha inteira
+    private static int pontuacao = 0;
+    private static int pontuacaoInicioFase = 0; 
+
+    public int PontuacaoCampanha => pontuacao;
+    
+    public static void NovaCampanha()
+    {
+        pontuacao = 0;
+        pontuacaoInicioFase = 0;
+    }
+
     private bool acabou;
+    private bool pontuacaoRegistrada; 
     private int indiceVelocidade;
 
     private void Awake()
     {
         Time.timeScale = 1f; // garante que o jogo volta a andar depois de resetar
         TempoRestante = tempoLimite;
+        pontuacao = pontuacaoInicioFase; // se reiniciou a fase, descarta os pontos da tentativa anterior
         painelFim.SetActive(false);
         botaoProximaFase.SetActive(false);
 
@@ -40,12 +54,19 @@ public class GameManager : MonoBehaviour
     {
         forte.Destroyed += ForteCaiu;
         geradorDeOndas.FaseConcluida += Vencer;
+        Enemy.Died += InimigoMorreu;
     }
 
     private void OnDisable()
     {
         forte.Destroyed -= ForteCaiu;
         geradorDeOndas.FaseConcluida -= Vencer;
+        Enemy.Died -= InimigoMorreu;
+    }
+
+    private void InimigoMorreu(Enemy inimigo)
+    {
+        pontuacao++;
     }
 
     private void Update()
@@ -74,18 +95,18 @@ public class GameManager : MonoBehaviour
 	// Cada fase é uma cena
         bool temProximaFase = SceneManager.GetActiveScene().buildIndex + 1 < SceneManager.sceneCountInBuildSettings;
         botaoProximaFase.SetActive(temProximaFase);
-
-        if (sobrevivencia) TerminarPartida("Vitória! Os reforços chegaram.");
-        else if (!temProximaFase) TerminarPartida("Vitória! Todas as fases vencidas.");
-        else TerminarPartida("Vitória! O forte resistiu.");
+        
+        if (sobrevivencia) TerminarPartida("Vitória! Os reforços chegaram.", !temProximaFase);
+        else if (!temProximaFase) TerminarPartida("Vitória! Todas as fases vencidas.", true);
+        else TerminarPartida("Vitória! O forte resistiu.", false);
     }
 
     private void Perder(string motivo)
     {
-        TerminarPartida($"Derrota! {motivo}");
+        TerminarPartida($"Derrota! {motivo}", true);
     }
 
-    private void TerminarPartida(string mensagem)
+    private void TerminarPartida(string mensagem, bool fimDeJogo)
     {
         if (acabou) return;
 
@@ -93,6 +114,16 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f; // pausa o jogo
         textoFim.text = mensagem;
         painelFim.SetActive(true);
+
+        if (fimDeJogo) RegistrarNoRanking();
+    }
+
+    private void RegistrarNoRanking()
+    {
+        if (pontuacaoRegistrada) return;
+
+        pontuacaoRegistrada = true;
+        MenuPrincipal.RegistrarPontuacao(PontuacaoCampanha);
     }
 
     public void TrocarVelocidade()
@@ -112,11 +143,13 @@ public class GameManager : MonoBehaviour
 
     public void ProximaFase()
     {
+        pontuacaoInicioFase = pontuacao; 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void VoltarAoMenu()
     {
+        RegistrarNoRanking(); 
         Time.timeScale = 1f; 
         SceneManager.LoadScene("Menu");
     }
