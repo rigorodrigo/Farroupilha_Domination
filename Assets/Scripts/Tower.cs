@@ -9,7 +9,7 @@ public class Tower : MonoBehaviour
     [SerializeField] private float fireInterval = 0.5f; // segundos entre ataques
     [SerializeField] private Projectile projectilePrefab;
 
-    public AudioClip pupupuSound;
+    [SerializeField] private AudioClip somDoAtaque;
     private AudioSource towerAudio;
     private TowerVisual visual;
 
@@ -48,7 +48,7 @@ public class Tower : MonoBehaviour
         Projectile projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
         projectile.Launch(target.transform.position);
 
-        if (towerAudio != null && pupupuSound != null) towerAudio.PlayOneShot(pupupuSound, 1.0f);
+        if (towerAudio != null && somDoAtaque != null) towerAudio.PlayOneShot(somDoAtaque, 1.0f);
     }
 
     private Enemy FindClosestEnemy()

@@ -160,7 +160,7 @@ MonoBehaviour:
   range: 3.2
   fireInterval: 0.9
   projectilePrefab: {fileID: 5387145607360182075, guid: 1a994be4fca474774a391d5107be465b, type: 3}
-  pupupuSound: {fileID: 8300000, guid: caca1dfeae49c2f48a6940a837270d7e, type: 3}
+  somDoAtaque: {fileID: 8300000, guid: 348000da1fe0de412bc71e5836e9e614, type: 3}
 --- !u!82 &-8843240770463776552
 AudioSource:
   m_ObjectHideFlags: 0
