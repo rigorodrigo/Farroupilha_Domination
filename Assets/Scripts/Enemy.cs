@@ -15,6 +15,8 @@ public class Enemy : MonoBehaviour
 
     public WaypointPath path; // Caminho que será seguido
 
+    public float VidaPercentual => health / maxHealth;
+
     private Rigidbody2D body;
     private float health;
     private int targetIndex;

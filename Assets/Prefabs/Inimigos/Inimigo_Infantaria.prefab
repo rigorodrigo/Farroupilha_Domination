@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4700206180387219663}
   - component: {fileID: 1423483684467970418}
   - component: {fileID: -3216828359793055788}
+  - component: {fileID: 7350142718896315402}
   m_Layer: 0
   m_Name: Inimigo_Infantaria
   m_TagString: Untagged
@@ -190,3 +191,21 @@ MonoBehaviour:
   - {fileID: -856350374, guid: d824f74470b6909448beb889dc6feb19, type: 3}
   - {fileID: 2126647599, guid: d824f74470b6909448beb889dc6feb19, type: 3}
   quadrosPorSegundo: 6
+--- !u!114 &7350142718896315402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5061694100435759499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1249274a5133431fbafbb0ade2fca724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BarraDeVida
+  largura: 0.5
+  altura: 0.07
+  distanciaAcima: 0.05
+  corDoFundo: {r: 0.15, g: 0.15, b: 0.15, a: 1}
+  corVidaCheia: {r: 0, g: 1, b: 0, a: 1}
+  corVidaBaixa: {r: 1, g: 0, b: 0, a: 1}
