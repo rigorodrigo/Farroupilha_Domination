@@ -1,6 +1,5 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Enemy))]
 public class BarraDeVida : MonoBehaviour
 {
     [SerializeField] private float largura = 0.5f;
@@ -10,19 +9,16 @@ public class BarraDeVida : MonoBehaviour
     [SerializeField] private Color corVidaCheia = Color.green;
     [SerializeField] private Color corVidaBaixa = Color.red;
 
-    private Enemy enemy;
     private GameObject barra;
     private Transform preenchimento;
     private SpriteRenderer corDoPreenchimento;
 
-    private void Start()
+    private void Awake()
     {
-        enemy = GetComponent<Enemy>();
-
         float escala = transform.lossyScale.x;
 
-        SpriteRenderer spriteDoInimigo = GetComponent<SpriteRenderer>();
-        float topo = spriteDoInimigo.bounds.max.y - transform.position.y;
+        SpriteRenderer sprite = GetComponentInChildren<SpriteRenderer>();
+        float topo = sprite.bounds.max.y - transform.position.y;
 
         barra = new GameObject("BarraDeVida");
         barra.transform.SetParent(transform, false);
@@ -39,12 +35,10 @@ public class BarraDeVida : MonoBehaviour
         barra.SetActive(false);
     }
 
-    private void Update()
+    public void Atualizar(float vida)
     {
-        float vida = enemy.VidaPercentual;
-        if (vida >= 1f) return;
-
-        barra.SetActive(true);
+        vida = Mathf.Clamp01(vida);
+        barra.SetActive(vida < 1f);
         preenchimento.localScale = new Vector3(largura * vida, altura, 1f);
         corDoPreenchimento.color = Color.Lerp(corVidaBaixa, corVidaCheia, vida);
     }

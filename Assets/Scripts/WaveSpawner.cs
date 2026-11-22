@@ -55,13 +55,11 @@ public class WaveSpawner : MonoBehaviour
     private void OnEnable()
     {
         Enemy.Died += InimigoMorreu;
-        Enemy.ReachedBase += InimigoMorreu;
     }
 
     private void OnDisable()
     {
         Enemy.Died -= InimigoMorreu;
-        Enemy.ReachedBase -= InimigoMorreu;
     }
 
     private void InimigoMorreu(Enemy inimigo)

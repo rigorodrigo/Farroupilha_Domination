@@ -6,9 +6,10 @@ public class PlayerBase : MonoBehaviour
     public event Action<int> HealthChanged; // Eventos são show de bola
     public event Action Destroyed;          
 
-    [SerializeField] private int maxHealth = 20;
+    [SerializeField] private int maxHealth = 100;
 
     private int health;
+    private BarraDeVida barra;
 
     // Só leitura, pro HUD mostrar a vida
     public int Health => health;
@@ -17,6 +18,7 @@ public class PlayerBase : MonoBehaviour
     private void Awake()
     {
         health = maxHealth;
+        barra = GetComponent<BarraDeVida>();
     }
 
     public void TakeDamage(int amount)
@@ -24,8 +26,8 @@ public class PlayerBase : MonoBehaviour
         if (health <= 0) return;
 
         health = Mathf.Max(health - amount, 0);
-        Debug.Log($"Base atingida! Vida: {health}/{maxHealth}");
         HealthChanged?.Invoke(health);
+        if (barra != null) barra.Atualizar((float)health / maxHealth);
         if (health == 0) Destroyed?.Invoke();
     }
 }

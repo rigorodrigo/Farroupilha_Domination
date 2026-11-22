@@ -8,15 +8,22 @@ public class Tower : MonoBehaviour
     [SerializeField] private float range = 3.5f;
     [SerializeField] private float fireInterval = 0.5f; // segundos entre ataques
     [SerializeField] private Projectile projectilePrefab;
+    [SerializeField] private float vidaMaxima = 20f;
+
+    public static readonly List<Tower> Todas = new List<Tower>();
 
     [SerializeField] private AudioClip somDoAtaque;
     private AudioSource towerAudio;
     private TowerVisual visual;
+    private BarraDeVida barra;
 
     private float cooldown;
+    private float vida;
 
-    void Start()
+    void Awake()
     {
+        vida = vidaMaxima;
+        barra = GetComponent<BarraDeVida>();
         towerAudio = GetComponent<AudioSource>();
         visual = GetComponentInChildren<TowerVisual>();
 
@@ -25,6 +32,16 @@ public class Tower : MonoBehaviour
             Debug.LogError($"{name} não tem TowerVisual em nenhum filho.", this);
             enabled = false;
         }
+    }
+
+    private void OnEnable() { Todas.Add(this); }
+    private void OnDisable() { Todas.Remove(this); }
+
+    public void ReceberDano(float dano)
+    {
+        vida -= dano;
+        if (barra != null) barra.Atualizar(vida / vidaMaxima);
+        if (vida <= 0f) Destroy(gameObject);
     }
 
     private void Update()
@@ -42,7 +59,7 @@ public class Tower : MonoBehaviour
 
     private void Disparar(Enemy target)
     {
-        if (target == null) return;
+        if (target == null || target.Morto) return;
 
         // Mira onde o inimigo está agore, se ele for rápido o tiro pode passar atrás dele
         Projectile projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);

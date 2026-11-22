@@ -28,6 +28,7 @@ public class TowerSlot : MonoBehaviour
     void Update()
     {
         if (Ocupado) return;
+        if (spriteLivre != null) sr.sprite = spriteLivre;
 
         Color cor = Color.white;
         if (mouseEmCima) cor = loja.PodeComprarSelecionada() ? corPodeComprar : corSemPila;

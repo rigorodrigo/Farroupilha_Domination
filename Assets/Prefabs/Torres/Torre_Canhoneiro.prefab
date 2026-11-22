@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 4675029016102635158}
   - component: {fileID: 8804462221670827995}
   - component: {fileID: -8843240770463776552}
+  - component: {fileID: 7350142718896315404}
   m_Layer: 0
   m_Name: Torre_Canhoneiro
   m_TagString: Untagged
@@ -258,3 +259,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7350142718896315404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7366067591881546794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1249274a5133431fbafbb0ade2fca724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BarraDeVida
+  largura: 0.6
+  altura: 0.08
+  distanciaAcima: 0.05
+  corDoFundo: {r: 0.15, g: 0.15, b: 0.15, a: 1}
+  corVidaCheia: {r: 0, g: 1, b: 0, a: 1}
+  corVidaBaixa: {r: 1, g: 0, b: 0, a: 1}
