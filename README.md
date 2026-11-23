@@ -4,7 +4,9 @@ Este projeto trata de um jogo Tower Defense no formato 2D cujo objetivo é simul
 
 A **Guerra dos Farrapos**, também chamada de **Revolução Farroupilha**, foi a mais longa guerra civil do Brasil. O conflito ocorreu entre 1835 e 1845, na província de São Pedro do Rio Grande do Sul (atual Rio Grande do Sul), envolvendo tropas farroupilhas, lideradas por estancieiros locais, e as forças do Império do Brasil.
 
-Basicamente, o jogador é o Xirú, patrão das tropas farroupilhas, e precisa posicionar Gaúchos (as torres) pelo caminho para frear os ataques da Força Imperial. A cada fase vencida, a marcha farroupilha avança rumo à capital do Império, e as ondas ficam maiores e mais fortes. A moeda do jogo é o Pila: ele é ganho derrubando imperiais e usado para comprar novos Gaúchos
+Basicamente, o jogador é o Xirú, patrão das tropas farroupilhas, e precisa posicionar Gaúchos (as torres) pelo caminho para frear os ataques da Força Imperial. A cada fase vencida, a marcha farroupilha avança rumo à capital do Império, e as ondas ficam maiores e mais fortes. A moeda do jogo é o Pila: ele é ganho derrubando imperiais e usado para comprar novos Gaúchos.
+
+O jogador é a peça chave na vitória da Revolução, sendo a diferença que levará a República do Piratini à legitimidade perante o mundo. Progrida desde a conquista de Porto Alegre até a capital imperial numa jornada bagual, xíru e tradicional. 
 
 ## Vídeo de Apresentação
 [link para o vídeo de apresentação do game]
@@ -14,7 +16,7 @@ piriri pororó
 
 ## Como Jogar
 
-- **Objetivo:** não deixar a Força Imperial derrubar o forte antes de o tempo acabar.
+- **Objetivo:** não deixar a Força Imperial derrubar o forte antes de o tempo acabar. 
 - **Comprar Gaúchos:** escolha a torre no card de baixo (ou aperte **1**/**2**) e clique num slot livre do mapa. O slot fica verde se tiver pila suficiente e vermelho se faltar.
 - **Pila:** cada imperial derrubado rende pila para comprar mais Gaúchos.
 - **Ondas:** clique em **Começar** / **Próxima onda** quando estiver pronto. O relógio só corre durante as ondas.
