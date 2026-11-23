@@ -68,4 +68,9 @@ public class Enemy : MonoBehaviour
         maxHealth *= multiplicador;
         health = maxHealth;
     }
+
+    public void MultiplicarVelocidade(float multiplicador)
+    {
+        speed *= multiplicador;
+    }
 }

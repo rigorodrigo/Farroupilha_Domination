@@ -10,6 +10,12 @@ public class ForteAtaque : MonoBehaviour
     [SerializeField] private float volume = 0.5f;
 
     private float cooldown;
+    private ForteVisual visual;
+
+    private void Awake()
+    {
+        visual = GetComponent<ForteVisual>();
+    }
 
     private void Update()
     {
@@ -21,6 +27,7 @@ public class ForteAtaque : MonoBehaviour
 
         cooldown = intervalo;
         alvo.TakeDamage(dano);
+        if (visual != null) visual.MostrarTiro();
         if (somDoTiro != null) AudioSource.PlayClipAtPoint(somDoTiro, Camera.main.transform.position, volume);
     }
 

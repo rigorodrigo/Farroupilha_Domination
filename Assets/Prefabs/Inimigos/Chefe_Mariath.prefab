@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5793533497774330327
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1423483684467970418, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423483684467970418, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: maxHealth
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753588955882826215, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753588955882826215, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753588955882826215, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753588955882826215, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753588955882826215, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753588955882826215, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753588955882826215, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753588955882826215, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753588955882826215, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753588955882826215, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753588955882826215, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753588955882826215, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753588955882826215, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061694100435759499, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: m_Name
+      value: Chefe_Mariath
+      objectReference: {fileID: 0}
+    - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: danoNaTorre
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: danoNoForte
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: alcanceNasTorres
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116243016876254539, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: m_Color.g
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116243016876254539, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: m_Color.r
+      value: 0.55
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5061694100435759499, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 724250067343297485}
+  m_SourcePrefab: {fileID: 100100000, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+--- !u!1 &1610173146953130076 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5061694100435759499, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+  m_PrefabInstance: {fileID: 5793533497774330327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &724250067343297485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610173146953130076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 400bbb98cdf09b740b95e69dc02c8cdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Chefe
+  nome: Almirante Mariath
+  temSegundaFase: 0
+  vidaSegundaFase: 0.5
+  multiplicadorVelocidade: 1.5
+  corSegundaFase: {r: 1, g: 0.6, b: 0.6, a: 1}
+  reforco: {fileID: 0}
+  quantidadeReforco: 6

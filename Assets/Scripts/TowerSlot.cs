@@ -42,7 +42,7 @@ public class TowerSlot : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (Ocupado) return;
+        if (Ocupado || CaixaDeDialogo.Aberta) return;
 
         torreAtual = loja.Comprar(transform.position);
 

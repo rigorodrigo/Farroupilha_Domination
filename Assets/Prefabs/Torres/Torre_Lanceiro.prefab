@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5767340009570969310
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4293014913742499717, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: parado
+      value: 
+      objectReference: {fileID: 21300000, guid: abc2eb434cdf8f4e996c42f2fefe7c6b, type: 3}
+    - target: {fileID: 4293014913742499717, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: disparando
+      value: 
+      objectReference: {fileID: 21300000, guid: e29b343e8a10b9802b0a61e74067acac, type: 3}
+    - target: {fileID: 4293014913742499717, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: preparando
+      value: 
+      objectReference: {fileID: 21300000, guid: 17ed9d3731b1ce0599903f95f1d22c0d, type: 3}
+    - target: {fileID: 4293014913742499717, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: recuperando
+      value: 
+      objectReference: {fileID: 21300000, guid: 02b455d6a11f15d58a2892c976ee24d5, type: 3}
+    - target: {fileID: 4675029016102635158, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4675029016102635158, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4675029016102635158, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4675029016102635158, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4675029016102635158, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4675029016102635158, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4675029016102635158, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4675029016102635158, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4675029016102635158, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4675029016102635158, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366067591881546794, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: m_Name
+      value: Torre_Lanceiro
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499441356119531746, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: abc2eb434cdf8f4e996c42f2fefe7c6b, type: 3}
+    - target: {fileID: 8499441356119531746, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499441356119531746, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804462221670827995, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: range
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804462221670827995, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: vidaMaxima
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804462221670827995, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: somDoAtaque
+      value: 
+      objectReference: {fileID: 8300000, guid: d14c18ceaf5c76098a93bee1051234b2, type: 3}
+    - target: {fileID: 8804462221670827995, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: fireInterval
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804462221670827995, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 3470134657101996756, guid: 0dae6da94208227cc9324e0f5aa9720b, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b852ea69ee3ac29d9a7d5727d3d797f5, type: 3}
