@@ -34,8 +34,11 @@ public class LojaDeTorres : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1)) Selecionar(0);
-        if(Input.GetKeyDown(KeyCode.Alpha2)) Selecionar(1);
+        // Tecla 1 = primeira torre, 2 = segunda, e assim por diante
+        for (int i = 0; i < opcoes.Count && i < 9; i++)
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1 + i)) Selecionar(i);
+        }
     }
 
     public Tower Comprar(Vector3 posicao)

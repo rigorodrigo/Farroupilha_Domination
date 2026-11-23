@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4825075342593785815
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 708747295877820781, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: m_Name
+      value: Chefe_Caxias
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020707821055646957, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: danoNaTorre
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020707821055646957, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: danoNoForte
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3560131407729812909, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 3560131407729812909, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322695175001385217, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322695175001385217, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322695175001385217, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322695175001385217, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322695175001385217, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322695175001385217, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322695175001385217, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322695175001385217, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322695175001385217, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322695175001385217, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322695175001385217, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322695175001385217, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322695175001385217, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641257764725068180, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641257764725068180, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      propertyPath: maxHealth
+      value: 450
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 708747295877820781, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6299028065106467082}
+  m_SourcePrefab: {fileID: 100100000, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+--- !u!1 &5414423638019182266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 708747295877820781, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+  m_PrefabInstance: {fileID: 4825075342593785815}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6299028065106467082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5414423638019182266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 400bbb98cdf09b740b95e69dc02c8cdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Chefe
+  nome: Duque de Caxias
+  temSegundaFase: 1
+  vidaSegundaFase: 0.5
+  multiplicadorVelocidade: 1.6
+  corSegundaFase: {r: 1, g: 0.6, b: 0.6, a: 1}
+  reforco: {fileID: 6641257764725068180, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
+  quantidadeReforco: 6

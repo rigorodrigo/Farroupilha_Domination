@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
@@ -5,6 +7,7 @@ using TMPro;
 // Controla tudo no jogo.
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private string nomeDaFase = "";
     [SerializeField] private float tempoLimite = 120f; // Em segundos por favor vamos lembrar
     [SerializeField] private bool sobrevivencia = false; // Timer vira um contador de tempo sobrevivente
     [SerializeField] private PlayerBase forte;
@@ -18,9 +21,15 @@ public class GameManager : MonoBehaviour
     [Header("Velocidade do jogo")]
     [SerializeField] private float[] velocidades = { 1f, 2f, 4f };
 
+    [Header("Diálogos da fase")]
+    [SerializeField] private CaixaDeDialogo caixaDeDialogo;
+    [SerializeField] private List<Fala> falasDoInicio;
+    [SerializeField] private List<Fala> falasDoFim;
+
     public float TempoRestante { get; private set; }
     public float Velocidade => velocidades[indiceVelocidade];
     public bool Sobrevivencia => sobrevivencia;
+    public string NomeDaFase => nomeDaFase;
 
     // static: sobrevive à troca de cena, então soma a campanha inteira
     private static int pontuacao = 0;
@@ -48,6 +57,11 @@ public class GameManager : MonoBehaviour
 
         // Na sobrevivência as ondas não acabam daí, pra descomplicar, depois da última, volta pra primeira
         if (sobrevivencia) geradorDeOndas.RepetirOndas = true;
+    }
+
+    private void Start()
+    {
+        if (caixaDeDialogo != null) caixaDeDialogo.Mostrar(falasDoInicio);
     }
 
     private void OnEnable()
@@ -91,25 +105,32 @@ public class GameManager : MonoBehaviour
     private void Vencer()
     {
         if (acabou) return;
-	
+
+        acabou = true;
+        StartCoroutine(VencerDepoisDasFalas());
+    }
+
+    private IEnumerator VencerDepoisDasFalas()
+    {
+        if (caixaDeDialogo != null) yield return caixaDeDialogo.Mostrar(falasDoFim);
+
 	// Cada fase é uma cena
         bool temProximaFase = SceneManager.GetActiveScene().buildIndex + 1 < SceneManager.sceneCountInBuildSettings;
         botaoProximaFase.SetActive(temProximaFase);
         
         if (sobrevivencia) TerminarPartida("Vitória! Os reforços chegaram.", !temProximaFase);
-        else if (!temProximaFase) TerminarPartida("Vitória! Todas as fases vencidas.", true);
+        else if (!temProximaFase) TerminarPartida("Vitória! A República Rio-Grandense chegou à Corte.", true);
         else TerminarPartida("Vitória! O forte resistiu.", false);
     }
 
     private void Perder(string motivo)
     {
+        if (acabou) return;
         TerminarPartida($"Derrota! {motivo}", true);
     }
 
     private void TerminarPartida(string mensagem, bool fimDeJogo)
     {
-        if (acabou) return;
-
         acabou = true;
         Time.timeScale = 0f; // pausa o jogo
         textoFim.text = mensagem;

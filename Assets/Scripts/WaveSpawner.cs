@@ -18,6 +18,7 @@ public class Wave
     public float pausa;
     public List<EnemyGroup> grupos;
     public bool ondaDificil;
+    public List<Fala> falasAntes; // Diálogo depois de clicar em "Próxima onda"
 }
 
 public class WaveSpawner : MonoBehaviour
@@ -28,6 +29,7 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField] private bool esperarJogador = true; 
 
     [SerializeField] private float multiplicadorVidaDificil = 1.5f;
+    [SerializeField] private CaixaDeDialogo caixaDeDialogo;
 
     public event Action FaseConcluida; // Avisa o GameManager que todas as ondas acabaram
     public event Action<int> OndaComecou; // Avisa o HUD o número da onda que começou
@@ -39,6 +41,7 @@ public class WaveSpawner : MonoBehaviour
     public bool RepetirOndas { get; set; }
 
     private bool liberarOnda;
+    private int reforcosPendentes;
 
     // Chamado pelo botão "Próxima onda" do HUD
     public void ChamarProximaOnda()
@@ -82,6 +85,24 @@ public class WaveSpawner : MonoBehaviour
         inimigosVivos++;
     }
 
+    // Chamado pelo Boss
+    public void SpawnarReforco(Enemy prefab, int quantidade, WaypointPath caminho)
+    {
+        EnemyGroup reforco = new EnemyGroup { prefab = prefab, quantidade = quantidade, intervalo = 0.5f, caminho = caminho };
+        reforcosPendentes += quantidade;
+        StartCoroutine(SpawnarReforcoAosPoucos(reforco));
+    }
+
+    private IEnumerator SpawnarReforcoAosPoucos(EnemyGroup grupo)
+    {
+        for (int i = 0; i < grupo.quantidade; i++)
+        {
+            SpawnarInimigo(grupo);
+            reforcosPendentes--;
+            yield return new WaitForSeconds(grupo.intervalo);
+        }
+    }
+
     private IEnumerator SpawnarGrupo (EnemyGroup grupo)
     {
         for (int i = 0; i < grupo.quantidade; i ++)
@@ -99,7 +120,7 @@ public class WaveSpawner : MonoBehaviour
  	{
             yield return StartCoroutine(SpawnarGrupo(grupo));
         }
-        yield return new WaitUntil(() => inimigosVivos == 0); 
+        yield return new WaitUntil(() => inimigosVivos == 0 && reforcosPendentes == 0);
     }
 
     private IEnumerator ExecutarFase ()
@@ -109,6 +130,7 @@ public class WaveSpawner : MonoBehaviour
         {
             TotalOndas = ondas.Count(o => o.ondaDificil == false);   
         }
+        bool primeiraVolta = true; // na sobrevivência as ondas repetem, mas as falas não
         do
         {
 
@@ -124,11 +146,14 @@ public class WaveSpawner : MonoBehaviour
                     EsperandoJogador = false;
                 }
 
+                if (primeiraVolta && caixaDeDialogo != null) yield return caixaDeDialogo.Mostrar(ondas[i].falasAntes);
+
                 OndaAtual++;
                 OndaComecou?.Invoke(OndaAtual);
                 yield return StartCoroutine(SpawnarOnda(ondas[i]));
                 Debug.Log($"Onda número {i}");
             }
+            primeiraVolta = false;
         } while (RepetirOndas);
 
         Debug.Log("Fase Acabou.");

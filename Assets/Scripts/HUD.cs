@@ -37,6 +37,14 @@ public class HUD : MonoBehaviour
     [SerializeField] private TMP_Text textoAviso;
     [SerializeField] private float duracaoAviso = 2f;
 
+    [Header("Barra do chefe")]
+    [SerializeField] private GameObject painelChefe;
+    [SerializeField] private TMP_Text textoChefe;
+    [SerializeField] private Image barraChefe;
+
+    private Chefe chefeAtual;
+    private Coroutine avisoAtual;
+
     [Header("Cores")]
     [SerializeField] private Color corTexto = Color.white;
     [SerializeField] private Color corAlerta = new Color(0.95f, 0.4f, 0.35f);
@@ -48,12 +56,16 @@ public class HUD : MonoBehaviour
     {
         geradorDeOndas.OndaComecou += AvisarOnda;
         loja.SemPila += PiscarPila;
+        Chefe.Apareceu += MostrarChefe;
+        Chefe.SegundaFaseComecou += AvisarSegundaFase;
     }
 
     private void OnDisable()
     {
         geradorDeOndas.OndaComecou -= AvisarOnda;
         loja.SemPila -= PiscarPila;
+        Chefe.Apareceu -= MostrarChefe;
+        Chefe.SegundaFaseComecou -= AvisarSegundaFase;
     }
 
     private void Start()
@@ -68,11 +80,16 @@ public class HUD : MonoBehaviour
         }
 
         // Na sobrevivência o relógio é o tempo  até os reforços chegarem
-        if (gerenciador.Sobrevivencia)
-        {
-            legendaTempo.text = "REFORÇOS";
-            StartCoroutine(MostrarAviso("Resista até os reforços chegarem!"));
-        }
+        if (gerenciador.Sobrevivencia) legendaTempo.text = "REFORÇOS";
+
+        if (painelChefe != null) painelChefe.SetActive(false);
+        avisoAtual = StartCoroutine(AvisosDoInicio());
+    }
+
+    private IEnumerator AvisosDoInicio()
+    {
+        if (gerenciador.NomeDaFase != "") yield return MostrarAviso(gerenciador.NomeDaFase);
+        if (gerenciador.Sobrevivencia) yield return MostrarAviso("Resista até os reforços chegarem!");
     }
 
     private void Update()
@@ -101,13 +118,38 @@ public class HUD : MonoBehaviour
 	
 	bool alertar = !gerenciador.Sobrevivencia && gerenciador.TempoRestante <= tempoAlerta;
         textoTempo.color = alertar ? corAlerta : corTexto;
+
+        // Quando o chefe morre o Unity transforma em null, daí a barra some
+        if (painelChefe != null)
+        {
+            painelChefe.SetActive(chefeAtual != null);
+            if (chefeAtual != null) barraChefe.fillAmount = chefeAtual.VidaPercentual;
+        }
     }
 
     private void AvisarOnda(int numero)
     {
         bool ultima = !gerenciador.Sobrevivencia && numero == geradorDeOndas.TotalOndas;
-        string texto = ultima ? "Última onda!" : $"Onda {numero}";
-        StartCoroutine(MostrarAviso(texto));
+        Avisar(ultima ? "Última onda!" : $"Onda {numero}");
+    }
+
+    private void MostrarChefe(Chefe chefe)
+    {
+        chefeAtual = chefe;
+        if (textoChefe != null) textoChefe.text = chefe.Nome;
+        Avisar($"{chefe.Nome} chegou!");
+    }
+
+    private void AvisarSegundaFase(Chefe chefe)
+    {
+        Avisar($"{chefe.Nome} chamou reforços!");
+    }
+
+    // Troca o aviso do meio da tela
+    private void Avisar(string texto)
+    {
+        if (avisoAtual != null) StopCoroutine(avisoAtual);
+        avisoAtual = StartCoroutine(MostrarAviso(texto));
     }
 
     private IEnumerator MostrarAviso(string texto)
