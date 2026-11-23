@@ -4247,6 +4247,8 @@ MonoBehaviour:
   falasDoInicio:
   - personagem: {fileID: 0}
     texto: Porto Alegre, 20 de setembro de 1835.
+  - personagem: {fileID: 11400000, guid: 66bf9ef144d7bcb8eb492876f75f8533, type: 2}
+    texto: "General, me apresento \xE0 servi\xE7o como cusco bagual."
   - personagem: {fileID: 11400000, guid: 7a4f65c5d1f501cc3b64d3c7dee201e5, type: 2}
     texto: "Xir\xFA, precisamos reunir nosso ex\xE9rcito e chegar at\xE9 Rio De Janeiro!
       Viva a Rep\xFAblica do Piratini!"

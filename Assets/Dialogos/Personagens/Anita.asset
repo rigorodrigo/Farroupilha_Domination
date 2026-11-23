@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Anita
   m_EditorClassIdentifier: Assembly-CSharp::Personagem
   nome: Anita Garibaldi
-  retrato: {fileID: 0}
+  retrato: {fileID: 21300000, guid: 6673db5eff0be9ad59beda31c8c42ada, type: 3}
