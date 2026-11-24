@@ -22,7 +22,7 @@ Linux: Extrair o arquivo ```BagualagemFarroupilha-Linux.tar.gz``` utilizando ```
 - **Comprar Gaúchos:** escolha a torre no card de baixo (ou aperte **1**/**2**/**3**) e clique num slot livre do mapa. O slot fica verde se tiver pila suficiente e vermelho se faltar.
 - **Gaúchos:** existem três opções de gaúchos para serem arrematados pelo Xirú:
   1. Boleador: pode ser arrematado por 50 pila. A opção mais equilibrada de Gaúcho. Econômico e versátil.
-  2. Canhoneiro: pode ser arrematado por 75 pila. Seu ataque é mais danoso ao inimigo e possui alcance longo, porém é mais lento.
+  2. Atirador: pode ser arrematado por 75 pila. Seu ataque é mais danoso ao inimigo e possui alcance longo, porém é mais lento.
   3. Lanceiro: pode ser arrematado por 65 pila. Rápido, pode atingir até 5 inimigos de uma vez. Em contrapartida, seu alcance é curto.
 - **Pila:** cada imperial derrubado rende pila para comprar mais Gaúchos.
 - **Ondas:** clique em **Começar** / **Próxima onda** quando estiver pronto. O relógio só corre durante as ondas.
