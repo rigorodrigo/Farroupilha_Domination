@@ -12,7 +12,8 @@ O jogador é a peça chave na vitória da Revolução, sendo a diferença que le
 [link para o vídeo de apresentação do game]
 
 ## Como Baixar
-piriri pororó
+Windows: Extrair o zip ```BagualagemFarroupilha-Windows.zip``` e executar o arquivo BagualagemFarroupilha.exe.
+Linux: Extrair o arquivo ```BagualagemFarroupilha-Linux.tar.gz``` utilizando ```tar -xzf``` e executar ./BagualagemFarroupilha.x86_64 dentro da pasta gerada.
 
 ## Como Jogar
 
