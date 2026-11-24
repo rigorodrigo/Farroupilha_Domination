@@ -8,6 +8,8 @@ Basicamente, o jogador é o Xirú, patrão das tropas farroupilhas, e precisa po
 
 O jogador é a peça chave na vitória da Revolução, sendo a diferença que levará a República do Piratini à legitimidade perante o mundo. Progrida desde a conquista de Porto Alegre até a capital imperial numa jornada taura, bagual, e gaudéria. 
 
+O jogo conta com uma **trilha sonora** peculiar, para dizer o mínimo. São cinco músicas tradicionalistas escolhidas a dedo, que tornam o game muito mais irreverente e divertido para o Xiru. OBS: Este projeto possui fins 100% acadêmicos, por isso utiliza-se das músicas com direitos autorais reservados sem possuir nenhum tipo de licença.
+
 ## Vídeo de Apresentação
 [Clique Aqui para Acessar o Vídeo de Demonstração](https://drive.google.com/file/d/1t3bg-N3kY9lshR9UAbPCg3o-frHs68_G/view?usp=sharing)
 
