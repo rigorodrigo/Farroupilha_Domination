@@ -66,11 +66,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387145607360182075, guid: 1a994be4fca474774a391d5107be465b, type: 3}
       propertyPath: pierce
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5387145607360182075, guid: 1a994be4fca474774a391d5107be465b, type: 3}
       propertyPath: lifetime
-      value: 0.35
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7794715975710668962, guid: 1a994be4fca474774a391d5107be465b, type: 3}
       propertyPath: m_Sprite

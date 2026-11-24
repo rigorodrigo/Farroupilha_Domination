@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a19022df3b8e6e7d8afdbe794cd21fc0
+guid: 81b1d39ca11f269ad8591a45bd863e81
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2179904333566283977
-    second: retrato_BentoManuel_0
+      213: 2703723678055665295
+    second: retrato_bento_goncalves_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -42,11 +42,11 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: retrato_BentoManuel_0
+      name: retrato_bento_goncalves_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73f6279ee8c6fb1e0800000000000000
-      internalID: -2179904333566283977
+      spriteID: f8e02593c5e858520800000000000000
+      internalID: 2703723678055665295
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      retrato_bento_goncalves_0: 2703723678055665295
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

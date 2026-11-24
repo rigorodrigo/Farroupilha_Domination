@@ -3085,9 +3085,57 @@ MonoBehaviour:
       caminho: {fileID: 1281312676}
     ondaDificil: 0
     falasAntes: []
+  - pausa: 0
+    grupos:
+    - prefab: {fileID: 7363416847508638727, guid: 28fe855778bbb00b1bde26d5ab29b750, type: 3}
+      quantidade: 8
+      intervalo: 0.6
+      caminho: {fileID: 28771672}
+    - prefab: {fileID: 1423483684467970418, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      quantidade: 6
+      intervalo: 0.8
+      caminho: {fileID: 1281312676}
+    ondaDificil: 0
+    falasAntes: []
+  - pausa: 0
+    grupos:
+    - prefab: {fileID: 7363416847508638727, guid: 28fe855778bbb00b1bde26d5ab29b750, type: 3}
+      quantidade: 8
+      intervalo: 0.6
+      caminho: {fileID: 28771672}
+    - prefab: {fileID: 1423483684467970418, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      quantidade: 6
+      intervalo: 0.8
+      caminho: {fileID: 1281312676}
+    ondaDificil: 0
+    falasAntes: []
+  - pausa: 0
+    grupos:
+    - prefab: {fileID: 7363416847508638727, guid: 28fe855778bbb00b1bde26d5ab29b750, type: 3}
+      quantidade: 8
+      intervalo: 0.6
+      caminho: {fileID: 28771672}
+    - prefab: {fileID: 1423483684467970418, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      quantidade: 6
+      intervalo: 0.8
+      caminho: {fileID: 1281312676}
+    ondaDificil: 0
+    falasAntes: []
+  - pausa: 0
+    grupos:
+    - prefab: {fileID: 7363416847508638727, guid: 28fe855778bbb00b1bde26d5ab29b750, type: 3}
+      quantidade: 8
+      intervalo: 0.6
+      caminho: {fileID: 28771672}
+    - prefab: {fileID: 1423483684467970418, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      quantidade: 6
+      intervalo: 0.8
+      caminho: {fileID: 1281312676}
+    ondaDificil: 0
+    falasAntes: []
   inimigosVivos: 0
   esperarJogador: 1
-  multiplicadorVidaDificil: 0.5
+  multiplicadorVidaDificil: 1
   caixaDeDialogo: {fileID: 589353897}
 --- !u!1 &532022167
 GameObject:
@@ -4127,11 +4175,16 @@ MonoBehaviour:
       lados."
   - personagem: {fileID: 11400000, guid: 44e339222ff4419e58d857fe7a9032a1, type: 2}
     texto: "Tch\xEA, mas que barbaridade!"
-  - personagem: {fileID: 11400000, guid: 330263a32b4112bdf94fa1cc97ae6e8d, type: 2}
-    texto: "Venham logo! Precisamos de refor\xE7os de imediato."
   - personagem: {fileID: 11400000, guid: 66bf9ef144d7bcb8eb492876f75f8533, type: 2}
     texto: "A batalha j\xE1 comecou!"
+  - personagem: {fileID: 11400000, guid: 330263a32b4112bdf94fa1cc97ae6e8d, type: 2}
+    texto: "Venham logo! Precisamos de refor\xE7os de imediato! Almirante Mariath
+      est\xE1 quase n\xE1 vit\xF3ria. "
+  - personagem: {fileID: 11400000, guid: 62b48bde60efae359818b6730f325d96, type: 2}
+    texto: "Heha! Minha armada proteger\xE1 Laguna."
   falasDoFim:
+  - personagem: {fileID: 11400000, guid: 62b48bde60efae359818b6730f325d96, type: 2}
+    texto: "Desgra\xE7ados! Malditos!!! Glub... Glub... Glub..."
   - personagem: {fileID: 11400000, guid: 330263a32b4112bdf94fa1cc97ae6e8d, type: 2}
     texto: 'Mas que tri de bom, guri. Conquistamos Laguna! '
   - personagem: {fileID: 11400000, guid: 44e339222ff4419e58d857fe7a9032a1, type: 2}

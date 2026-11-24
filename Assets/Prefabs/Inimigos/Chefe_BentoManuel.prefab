@@ -14,11 +14,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3020707821055646957, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
       propertyPath: danoNaTorre
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3020707821055646957, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
       propertyPath: danoNoForte
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3560131407729812909, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
       propertyPath: m_Color.g
@@ -86,7 +86,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6641257764725068180, guid: 957b139cb8605d275a7d3b07ac2afa0e, type: 3}
       propertyPath: maxHealth
-      value: 150
+      value: 110
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -114,9 +114,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Chefe
   nome: Bento Manuel
+  falasAoAparecer: []
+  falasAoCair: []
   temSegundaFase: 0
   vidaSegundaFase: 0.5
   multiplicadorVelocidade: 1.5
   corSegundaFase: {r: 1, g: 0.6, b: 0.6, a: 1}
   reforco: {fileID: 0}
-  quantidadeReforco: 6
+  quantidadeReforco: 4

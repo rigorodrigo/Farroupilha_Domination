@@ -9,44 +9,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -3216828359793055788, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
-      propertyPath: atacando.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -3216828359793055788, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
-      propertyPath: 'atacando.Array.data[0]'
-      value: 
-      objectReference: {fileID: -49137154, guid: ae811ae3f52a96048ba1081da626f227, type: 3}
-    - target: {fileID: -3216828359793055788, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
-      propertyPath: 'atacando.Array.data[1]'
-      value: 
-      objectReference: {fileID: 1518278577, guid: ae811ae3f52a96048ba1081da626f227, type: 3}
-    - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
-      propertyPath: intervalo
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
-      propertyPath: alcanceNasTorres
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
-      propertyPath: alcanceNoForte
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
-      propertyPath: danoNaTorre
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
-      propertyPath: danoNoForte
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
-      propertyPath: somDoAtaque
-      value: 
-      objectReference: {fileID: 8300000, guid: d14c18ceaf5c76098a93bee1051234b2, type: 3}
-    - target: {fileID: -3216828359793055788, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3216828359793055788, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: atacando.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -3216828359793055788, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
       propertyPath: 'andando.Array.data[0]'
@@ -56,13 +24,21 @@ PrefabInstance:
       propertyPath: 'andando.Array.data[1]'
       value: 
       objectReference: {fileID: 1565836136, guid: ae811ae3f52a96048ba1081da626f227, type: 3}
+    - target: {fileID: -3216828359793055788, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: 'atacando.Array.data[0]'
+      value: 
+      objectReference: {fileID: -49137154, guid: ae811ae3f52a96048ba1081da626f227, type: 3}
+    - target: {fileID: -3216828359793055788, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: 'atacando.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1518278577, guid: ae811ae3f52a96048ba1081da626f227, type: 3}
     - target: {fileID: 1423483684467970418, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
       propertyPath: speed
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1423483684467970418, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
       propertyPath: maxHealth
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1753588955882826215, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
       propertyPath: m_LocalPosition.x
@@ -107,6 +83,30 @@ PrefabInstance:
     - target: {fileID: 5061694100435759499, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
       propertyPath: m_Name
       value: Inimigo_Cavalaria
+      objectReference: {fileID: 0}
+    - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: intervalo
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: danoNaTorre
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: danoNoForte
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: somDoAtaque
+      value: 
+      objectReference: {fileID: 8300000, guid: d14c18ceaf5c76098a93bee1051234b2, type: 3}
+    - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: alcanceNoForte
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
+      propertyPath: alcanceNasTorres
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9116243016876254539, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
       propertyPath: m_Sprite

@@ -6,6 +6,7 @@ public class PlayerStats : MonoBehaviour
 
     public int pila;
     [SerializeField] private int pilaInicial = 50;  // o player começa com um valor
+    [SerializeField] private int pilaPorInimigo = 15; // quanto ganha por inimigo derrotado
 
     private void OnEnable() {Enemy.Died += EnemyDied; }
     private void OnDisable() {Enemy.Died -= EnemyDied; }
@@ -22,7 +23,7 @@ public class PlayerStats : MonoBehaviour
     }
     void GanharPila()
     {
-        pila += 10;
+        pila += pilaPorInimigo;
         Debug.Log(pila);
     }
 

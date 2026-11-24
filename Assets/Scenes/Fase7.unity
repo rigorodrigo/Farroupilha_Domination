@@ -3521,8 +3521,46 @@ MonoBehaviour:
   - 2
   - 4
   caixaDeDialogo: {fileID: 1600291914}
-  falasDoInicio: []
-  falasDoFim: []
+  falasDoInicio:
+  - personagem: {fileID: 0}
+    texto: "Na capital do imp\xE9rio, o Ex\xE9rcito Farrapo j\xE1 acomodou-se na
+      cidade."
+  - personagem: {fileID: 11400000, guid: 330263a32b4112bdf94fa1cc97ae6e8d, type: 2}
+    texto: "Ent\xE3o estamos todos aqui?"
+  - personagem: {fileID: 11400000, guid: 44e339222ff4419e58d857fe7a9032a1, type: 2}
+    texto: Acredito que sim, minha prenda.
+  - personagem: {fileID: 11400000, guid: f36c6df281e0a988c8b55655b235bad8, type: 2}
+    texto: "Tch\xEA, finalmente \xE9 o momento."
+  - personagem: {fileID: 11400000, guid: 7a4f65c5d1f501cc3b64d3c7dee201e5, type: 2}
+    texto: "Depois de tanta luta e resist\xEAncia..."
+  - personagem: {fileID: 11400000, guid: 330263a32b4112bdf94fa1cc97ae6e8d, type: 2}
+    texto: "Cuidado, Duque de Caxias est\xE1 comandando o ultimo levante imperial."
+  - personagem: {fileID: 11400000, guid: 7b12a337525d41061ba2838bfd5ad2f1, type: 2}
+    texto: "Pois muito bem, deveriam ter cuidado. Todo o resto das tropas imperiais
+      est\xE3o comigo agora."
+  - personagem: {fileID: 11400000, guid: 7b12a337525d41061ba2838bfd5ad2f1, type: 2}
+    texto: Deveriam mesmo era ter medo de mim.
+  - personagem: {fileID: 11400000, guid: 66bf9ef144d7bcb8eb492876f75f8533, type: 2}
+    texto: "Mas que \xE9 isso homem?! Quem tem medo de caixa \xE9 cap\xE3o!"
+  - personagem: {fileID: 11400000, guid: 66bf9ef144d7bcb8eb492876f75f8533, type: 2}
+    texto: "Sou X\xEDru Bagual muito Guapo, chinel\xE3o aqui n\xE3o! "
+  - personagem: {fileID: 11400000, guid: 66bf9ef144d7bcb8eb492876f75f8533, type: 2}
+    texto: "\xC9 desse jeito aqui e agora, n\xE3o afrouxo meu garr\xE3o!"
+  falasDoFim:
+  - personagem: {fileID: 11400000, guid: 330263a32b4112bdf94fa1cc97ae6e8d, type: 2}
+    texto: "Est\xE1 feito..."
+  - personagem: {fileID: 11400000, guid: 44e339222ff4419e58d857fe7a9032a1, type: 2}
+    texto: "Ent\xE3o conseguimos..."
+  - personagem: {fileID: 11400000, guid: 7a4f65c5d1f501cc3b64d3c7dee201e5, type: 2}
+    texto: "Hah! Depois de tanta luta e resist\xEAncia!"
+  - personagem: {fileID: 11400000, guid: 7a4f65c5d1f501cc3b64d3c7dee201e5, type: 2}
+    texto: "Venha comemorar, X\xEDru!"
+  - personagem: {fileID: 11400000, guid: 66bf9ef144d7bcb8eb492876f75f8533, type: 2}
+    texto: "... Foi uma honra seguir ao lado de pessoas t\xE3o baguais de bom."
+  - personagem: {fileID: 11400000, guid: f36c6df281e0a988c8b55655b235bad8, type: 2}
+    texto: Eu oficialmente declaro...
+  - personagem: {fileID: 11400000, guid: f36c6df281e0a988c8b55655b235bad8, type: 2}
+    texto: "A Rep\xFAblica do Piratini ser\xE1 o futuro!"
 --- !u!4 &764324426
 Transform:
   m_ObjectHideFlags: 0
