@@ -4004,8 +4004,19 @@ MonoBehaviour:
   - 2
   - 4
   caixaDeDialogo: {fileID: 1571255761}
-  falasDoInicio: []
-  falasDoFim: []
+  falasDoInicio:
+  - personagem: {fileID: 11400000, guid: 7a4f65c5d1f501cc3b64d3c7dee201e5, type: 2}
+    texto: "X\xEDru! Quanto tempo, homem. Gra\xE7as \xE0 voc\xEA continuamos avan\xE7ando."
+  - personagem: {fileID: 11400000, guid: 66bf9ef144d7bcb8eb492876f75f8533, type: 2}
+    texto: General, bom ver o senhor bem.
+  - personagem: {fileID: 11400000, guid: 7a4f65c5d1f501cc3b64d3c7dee201e5, type: 2}
+    texto: "O que \xE9 isso, homem! J\xE1 somos cupinchas agora."
+  - personagem: {fileID: 11400000, guid: 7a4f65c5d1f501cc3b64d3c7dee201e5, type: 2}
+    texto: "Estamos \xE0 pouca dist\xE2ncia de Rio de Janeiro. Prepare-se para avan\xE7ar
+      comigo!"
+  falasDoFim:
+  - personagem: {fileID: 11400000, guid: 7a4f65c5d1f501cc3b64d3c7dee201e5, type: 2}
+    texto: "\xC9 isso X\xEDru, agora \xE9 a finaleira."
 --- !u!4 &764324426
 Transform:
   m_ObjectHideFlags: 0

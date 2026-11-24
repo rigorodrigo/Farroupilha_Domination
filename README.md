@@ -1,4 +1,4 @@
-# Farroupilha Domination
+# Bagualagem Farroupilha
 
 Este projeto trata de um jogo Tower Defense no formato 2D cujo objetivo é simular de forma "irreverente", a Guerra dos Farrapos, em uma realidade alternativa.
 

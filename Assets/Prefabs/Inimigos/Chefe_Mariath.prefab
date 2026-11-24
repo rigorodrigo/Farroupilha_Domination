@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1423483684467970418, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
       propertyPath: maxHealth
-      value: 250
+      value: 190
       objectReference: {fileID: 0}
     - target: {fileID: 1753588955882826215, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
       propertyPath: m_LocalScale.x
@@ -74,11 +74,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
       propertyPath: danoNaTorre
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
       propertyPath: danoNoForte
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7350142718896315403, guid: e29488be67a9ae183a2fef92a840d928, type: 3}
       propertyPath: alcanceNasTorres
@@ -118,9 +118,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Chefe
   nome: Almirante Mariath
+  falasAoAparecer: []
+  falasAoCair: []
   temSegundaFase: 0
   vidaSegundaFase: 0.5
   multiplicadorVelocidade: 1.5
   corSegundaFase: {r: 1, g: 0.6, b: 0.6, a: 1}
   reforco: {fileID: 0}
-  quantidadeReforco: 6
+  quantidadeReforco: 4

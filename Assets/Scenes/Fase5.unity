@@ -3613,8 +3613,16 @@ MonoBehaviour:
   - 2
   - 4
   caixaDeDialogo: {fileID: 1571255761}
-  falasDoInicio: []
-  falasDoFim: []
+  falasDoInicio:
+  - personagem: {fileID: 11400000, guid: 66bf9ef144d7bcb8eb492876f75f8533, type: 2}
+    texto: Hmm... Ainda temos caminho antes de Rio de Janeiro.
+  - personagem: {fileID: 11400000, guid: 66bf9ef144d7bcb8eb492876f75f8533, type: 2}
+    texto: Acho melhor descansarmos por aqui hoje, cupinchas sob meu comando.
+  - personagem: {fileID: 11400000, guid: 66bf9ef144d7bcb8eb492876f75f8533, type: 2}
+    texto: Preparem acampamento!
+  falasDoFim:
+  - personagem: {fileID: 11400000, guid: 66bf9ef144d7bcb8eb492876f75f8533, type: 2}
+    texto: Falta muito pouco agora. Seguiremos em frente.
 --- !u!4 &764324426
 Transform:
   m_ObjectHideFlags: 0

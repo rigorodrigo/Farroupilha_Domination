@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: BentoManuel
   m_EditorClassIdentifier: Assembly-CSharp::Personagem
   nome: Bento Manuel
-  retrato: {fileID: 21300000, guid: a19022df3b8e6e7d8afdbe794cd21fc0, type: 3}
+  retrato: {fileID: 21300000, guid: 330dc37fd18fe2d5788598a00f1ee8ce, type: 3}
