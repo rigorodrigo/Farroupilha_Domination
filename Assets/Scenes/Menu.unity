@@ -1707,7 +1707,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: BAGUALAGEM<br><size=55%><cspace=0.15em>FARROUPILHA</cspace></size>
+  m_text: "<size=80%><cspace=0.15em>DOMINA\xC7\xC3O</cspace></size><br>FARROUPILHA"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f4f56df95eaf19745990ad0785fb67c3, type: 2}
   m_sharedMaterial: {fileID: -5854843768215666418, guid: f4f56df95eaf19745990ad0785fb67c3, type: 2}
