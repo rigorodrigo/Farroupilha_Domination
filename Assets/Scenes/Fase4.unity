@@ -5706,7 +5706,7 @@ MonoBehaviour:
   - nome: Atirador
     prefab: {fileID: 8804462221670827995, guid: db8dd56bc07dfc9418cd55408605774d, type: 3}
     custo: 75
-    icone: {fileID: -3136899240424924828, guid: 85c3050bd3dd085439feadfba74db3ed, type: 3}
+    icone: {fileID: -1968798178, guid: c358d0745f07e968da048a93f7ede0a4, type: 3}
   - nome: Lanceiro
     prefab: {fileID: 3037131012500447493, guid: dfb654f1b5d77f3c8bf26055d1942002, type: 3}
     custo: 65
