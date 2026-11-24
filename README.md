@@ -14,7 +14,7 @@ O jogador é a peça chave na vitória da Revolução, sendo a diferença que le
 ## Como Baixar
 Windows: Extrair o zip ```BagualagemFarroupilha-Windows.zip``` e executar o arquivo BagualagemFarroupilha.exe.
 
-Linux: Extrair o arquivo ```BagualagemFarroupilha-Linux.tar.gz``` utilizando ```tar -xzf``` e executar ./BagualagemFarroupilha.x86_64 dentro da pasta gerada.
+Linux: Extrair o arquivo ```BagualagemFarroupilha-Linux.tar.gz``` utilizando ```tar -xzf``` e executar ```./BagualagemFarroupilha.x86_64``` dentro da pasta gerada.
 
 ## Como Jogar
 
